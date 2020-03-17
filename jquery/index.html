@@ -3,9 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>jquery練習01</title>
 </head>
 <body>
-  
+
+  <h1 id="txt">jqueryです</h1>
+  <h2 class="txtclass">jqueryです</h2>
+
+  <script src="jquery.min.js"></script>
+  <script>
+    // $(function(){
+    //   $('#txt').text('jqueryを操作しました');
+    //   $('.txtclass').text('jqueryを操作しました');
+    // });
+
+    document.getElementById('txt').innerText ='jQueryを操作しました';
+    document.querySelector('.txtclass').innerText ='jQueryを操作しました';
+  </script>
 </body>
 </html>
