@@ -7,18 +7,31 @@
 </head>
 <body>
 
-  <h1 id="txt">jqueryです</h1>
-  <h2 class="txtclass">jqueryです</h2>
+  <style>
+    .box {
+      background: #a11;
+      width: 300px;
+      height: 300px;
+      transition: all 2s;
+    }
+    .class {
+      background: #000;
+    }
+  </style>
+
+  <button>fadeOut</button>
+  <div class="box">box</div>
 
   <script src="jquery.min.js"></script>
   <script>
-    // $(function(){
-    //   $('#txt').text('jqueryを操作しました');
-    //   $('.txtclass').text('jqueryを操作しました');
-    // });
 
-    document.getElementById('txt').innerText ='jQueryを操作しました';
-    document.querySelector('.txtclass').innerText ='jQueryを操作しました';
+    $(function(){
+      $('button').on('click', function(){
+        $('.box').toggleClass('class');
+        // $('.box').css('width', 0);
+      });
+    });
+
   </script>
 </body>
 </html>
