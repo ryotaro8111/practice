@@ -1,0 +1,15 @@
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+.accordion dt {
+  padding: 20px;
+  cursor: pointer;
+  color: #ffff;
+  background: #333333;
+}
+.accordion dd {
+  display: none;
+  padding: 20px;
+  background: #ccc;
+}
