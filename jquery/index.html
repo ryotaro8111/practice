@@ -7,34 +7,27 @@
   <title>jquery練習01</title>
 </head>
 <body>
-  
 
   <div class="wrap">
-    <button class="nav-button">ボタン</button>
-    <nav id="js-anime" class="nav">
-      <ul>
-        <li>ナビゲーション</li>
-        <li>ナビゲーション</li>
-        <li>ナビゲーション</li>
-        <li>ナビゲーション</li>
-        <li>ナビゲーション</li>
-      </ul>
-    </nav>
+    <button class="modal-button">ボタン</button>
+    <div id="js-modal" class="modal-box">
+      <div class="modal-inner">
+        <p>モーダルウィンドウの中身になります</p>
+        <p id="js-modal-close" class="modal-close">モーダルを閉じる</p>
+      </div>
+    </div>
   </div>
-
-
-
 
   <script src="jquery.min.js"></script>
   <script>
-   $(function(){
-    //  $('button').click(function(){
-    //    $('#js-anime').toggleClass('anime');
-    //  });
-    $('button').on('click touchstart', function(){
-      $('#js-anime').toggleClass('anime');
+    $(function(){
+      $('button').on('click', function(){
+        $('#js-modal').fadeIn();
+      });
+      $('#js-modal-close').on ('click', function(){
+        $('#js-modal').fadeOut();
+      });
     });
-   });
   </script>
 </body>
 </html>

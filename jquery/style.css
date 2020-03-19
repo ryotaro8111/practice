@@ -2,31 +2,23 @@
   width: 960px;
   margin: 60px auto;
 }
-.nav-button {
+.modal-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: none;
+  padding: 60px;
+  color: #fff;
+  background: #333333;
 }
-.nav ul {
-  display: flex;
-  justify-content: space-between;
+.modal-inner {
+  padding: 30px;
+  color: #333;
+  background: #ffffff;
 }
-@media screen and (max-width: 768px){
-  .nav-button {
-    display: block;
-  }
-  .nav {
-    padding: 30px;
-    transition: 0.3s;
-    transform: translate(-100%,0);
-    background: #333;
-    color: #fff;
-  }
-  .anime {
-    transform: translate(0,0);
-  }
-  .nav ul {
-    display: block;
-  }
-  .nav li {
-    margin-bottom: 30px;
-  }
+.modal-close {
+  margin-top: 100px;
+  cursor: pointer;
 }
