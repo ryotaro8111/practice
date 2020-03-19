@@ -1,15 +1,32 @@
 .wrap {
   width: 960px;
-  margin: 0 auto;
+  margin: 60px auto;
 }
-.accordion dt {
-  padding: 20px;
-  cursor: pointer;
-  color: #ffff;
-  background: #333333;
-}
-.accordion dd {
+.nav-button {
   display: none;
-  padding: 20px;
-  background: #ccc;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px){
+  .nav-button {
+    display: block;
+  }
+  .nav {
+    padding: 30px;
+    transition: 0.3s;
+    transform: translate(-100%,0);
+    background: #333;
+    color: #fff;
+  }
+  .anime {
+    transform: translate(0,0);
+  }
+  .nav ul {
+    display: block;
+  }
+  .nav li {
+    margin-bottom: 30px;
+  }
 }

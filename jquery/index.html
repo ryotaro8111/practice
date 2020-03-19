@@ -10,14 +10,16 @@
   
 
   <div class="wrap">
-    <dl id="js-accordion" class="accordion">
-      <dt>Q.テキストテキストテキストテキストテキストテキスト</dt>
-      <dd>A.テキストテキストテキストテキストテキストテキスト</dd>
-      <dt>Q.テキストテキストテキストテキストテキストテキスト</dt>
-      <dd>A.テキストテキストテキストテキストテキストテキスト</dd>
-      <dt>Q.テキストテキストテキストテキストテキストテキスト</dt>
-      <dd>A.テキストテキストテキストテキストテキストテキスト</dd>
-    </dl>
+    <button class="nav-button">ボタン</button>
+    <nav id="js-anime" class="nav">
+      <ul>
+        <li>ナビゲーション</li>
+        <li>ナビゲーション</li>
+        <li>ナビゲーション</li>
+        <li>ナビゲーション</li>
+        <li>ナビゲーション</li>
+      </ul>
+    </nav>
   </div>
 
 
@@ -25,11 +27,14 @@
 
   <script src="jquery.min.js"></script>
   <script>
-    $(function(){
-      $('#js-accordion dt').click(function(){
-        $(this).next().slideToggle();
-      });
+   $(function(){
+    //  $('button').click(function(){
+    //    $('#js-anime').toggleClass('anime');
+    //  });
+    $('button').on('click touchstart', function(){
+      $('#js-anime').toggleClass('anime');
     });
+   });
   </script>
 </body>
 </html>
