@@ -13,3 +13,16 @@
 // } else {
 //  document.write(" まだまだ頑張りましょう");
 // }
+
+const fuku = window.prompt("1〜10の数字を入力してください");
+switch (fuku) {
+  case "5":
+    document.write("1等です！旅行が当たりました");
+    break;
+  case "3":
+    document.write("2等です！100インチテレビが当たりました");
+    break;
+  default:
+    document.write("外れ！ティッシュをあげます");
+    break;
+}
